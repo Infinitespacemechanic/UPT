@@ -1,0 +1,15 @@
+def pi_div_3 : Float := 3.141592653589793 / 3 -- 1.04719755 = 60°
+def drifted_slice : Float := pi_div_3 * 1.0471975511965976 -- π/3 · 1.0472
+def three_slices_make_pi : Float := pi_div_3 * 3 -- π/3 · 3 = π
+
+def torus_thirds : Nat := 3 -- 3 x 120° = 360° locks
+def degrees_120 : Nat := 120
+def full_circle : Nat := 120 * 3
+
+#eval pi_div_3 -- 1.0472 60°
+#eval drifted_slice -- 1.096... wiggle 60°
+#eval three_slices_make_pi -- 3.14159 π
+#eval full_circle -- 360°
+
+theorem three_thirds_full : 120 * 3 = 360 := by decide
+theorem pi_div_3_three_is_pi : 3 * (60) = 180 := by decide -- π in degrees

@@ -1,0 +1,10 @@
+def wiggle_add (x : Float) : Float := x + 0.04719755119659774
+def wiggle_mul (x : Float) : Float := x * 1.0471975511965976
+
+-- Breathing Stick = iterate additive
+#eval wiggle_add 0 -- 0.04719...
+#eval wiggle_add (wiggle_add 0) -- 0.09439...
+
+-- Blow-up Stick = iterate multiplicative  
+#eval wiggle_mul 1 -- 1.04719...
+#eval wiggle_mul (wiggle_mul 1) -- 1.09662... grows faster
