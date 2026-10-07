@@ -42,3 +42,11 @@ Above and Below Same Place. Single Field Non-Zero Hydrogen Continuum Different H
 E=M c=1 Light is smoke, pressure is fire. Time is resistance of pressed chains.
 
 Thread: Port Saint Lucie, FL - v1-v29 sealed - 2026-09-23
+
+## File map
+
+- `UPT.lean` is the Lean package root; `lakefile.lean` and `lean-toolchain` configure the build.
+- The named Lean files at the repository root hold the active modules.
+- `MillenniumClock.lean` and `SharingPrime.lean` are the retained variants.
+- Historical clock and sharing-prime versions are preserved in `archive/`.
+- Supporting folders are preserved under `notes/`.
